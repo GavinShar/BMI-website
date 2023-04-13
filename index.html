@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BMI Calculator</title>
+        <style>
+            .content {
+                max-width: 500px;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1>BMI Calculator</h1>
+            <p>Enter your weight: <input type="text" id="weightNum" name="weightNum" value=""></p>
+            
+            <p>Enter your height</p>
+            <p>Feet: <input type="text" id="feetNum" name="feetNum" value=""></p>
+            
+            <p>Inches: <input type="text" id="inchesNum" name="inchesNum" value=""></p>
+            
+            <input type="button" value="submit" id="submitButton" onclick="bmiCalc()">
+            <p>Your BMI is: <input type="text" id="bmiNum" name="bmiNum"></p>
+        </div>
+        <script src="js/main.js"></script>
+    </body> 
+    
+</html>
