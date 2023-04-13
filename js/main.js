@@ -2,9 +2,17 @@
 function bmiCalc()
 {
     //gets initial values from user
-    let heightNum1 = parseInt(document.getElementById("inchesNum").value);
-    let heightNum2 = parseInt(document.getElementById("feetNum").value);
-    let weightNum = parseInt(document.getElementById("weightNum").value);
+    let heightNum1 = 0;
+    let heightNum2 = 0;
+    let weightNum = 0;
+    try{
+        heightNum1 = parseInt(document.getElementById("inchesNum").value);
+        heightNum2 = parseInt(document.getElementById("feetNum").value);
+        weightNum = parseInt(document.getElementById("weightNum").value);
+    } catch (TypeError) {
+        console.debug("Error: TypeError");
+    }
+    
     let totalHeight;
     //convert values to metric
     totalHeight = (heightNum2 * 12) + heightNum1;
